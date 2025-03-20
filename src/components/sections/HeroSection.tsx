@@ -4,7 +4,7 @@ import Button from "../common/Button";
 const HeroSection = () => {
   return (
     <section
-      className="relative py-16 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between rounded-[50px] min-h-[650px] md:h-[750px] mt-5"
+      className="relative py-16 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between rounded-[50px] min-h-[650px] md:h-[700px] mt-5"
       style={{
         backgroundImage: "url('/images/hero-background.png')",
         backgroundSize: "cover",

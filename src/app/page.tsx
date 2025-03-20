@@ -4,6 +4,9 @@ import ChallengeSection from '../components/sections/ChallengeSection';
 import Analyzesection from '../components/sections/Analyzesection';
 import Workoutsection from '../components/sections/Workoutsection';
 import Experttrainersection from '../components/sections/Experttrainersection';
+import Trainingdevice from '../components/sections/Trainingdevicesection';
+import SubscribePage from '../components/sections/Subscribesection';
+import Footer from '../components/sections/Footersection';
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
       <Analyzesection />
       <Workoutsection />
       <Experttrainersection />
+      <Trainingdevice />
+      <SubscribePage />
+      <Footer />
     </div>
   );
 }
