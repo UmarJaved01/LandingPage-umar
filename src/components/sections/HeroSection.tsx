@@ -1,50 +1,40 @@
-import Image from 'next/image';
-import Button from '../common/Button';
-import Container from '../ui/Container';
+import Image from "next/image";
+import Button from "../common/Button";
 
 const HeroSection = () => {
   return (
-    <section className="py-16 relative overflow-hidden">
-      <Container>
-        <div className="relative">
-          {/* Background Image with Rounded Top Corners */}
-          <div className="absolute -left-16 -right-16 inset-y-0 -z-10 rounded-[40px] overflow-hidden">
-            <Image
-              src="/images/hero-background.png"
-              alt="Hero Background"
-              fill
-              style={{ objectFit: 'cover', objectPosition: 'center' }}
-            />
-          </div>
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            {/* Text and Buttons */}
-            <div className="md:w-1/2 space-y-6 z-10">
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-                SMASHY<br />OUR LIMITS
-              </h1>
-              <p className="text-gray-600 text-lg">
-                Plan to be bigger, stronger, and more athletic
-              </p>
-              <div className="flex space-x-4">
-                <Button>Book a Demo</Button>
-                <Button color="secondary">Contact Us</Button>
-              </div>
-            </div>
-            {/* Separate div for Phone Image */}
-            <div className="md:w-1/2 mt-8 md:mt-0 relative z-10">
-              <div className="relative w-full h-[500px] flex justify-end">
-                <Image
-                  src="/images/phone-image.png"
-                  alt="Phone image"
-                  fill
-                  style={{ objectFit: 'contain', objectPosition: 'right center' }}
-                  className="absolute right-0"
-                />
-              </div>
-            </div>
-          </div>
+    <section
+      className="relative py-16 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between rounded-[50px] min-h-[650px] md:h-[750px] mt-5"
+      style={{
+        backgroundImage: "url('/images/hero-background.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Left Content */}
+      <div className="flex flex-col text-center md:text-left md:w-3/5 space-y-6 z-10">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-black leading-tight">
+          SMASHY<br />OUR<br />LIMITS
+        </h1>
+        <p className="text-lg sm:text-xl" style={{ color: "oklch(0.74 0.07 111.9)" }}>
+          Plan to be bigger, stronger, and more athletic
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center md:justify-start">
+          <Button>Book a Demo</Button>
+          <Button color="secondary">Contact Us</Button>
         </div>
-      </Container>
+      </div>
+
+      {/* Right Image */}
+      <div className="relative w-full flex justify-center md:w-auto md:absolute md:right-16 md:top-12 mt-10 md:mt-0">
+        <Image
+          src="/images/phone-image.png"
+          width={300}
+          height={640}
+          alt="Mobile App Preview"
+          className="w-[250px] sm:w-[300px] md:w-[400px] h-auto"
+        />
+      </div>
     </section>
   );
 };
