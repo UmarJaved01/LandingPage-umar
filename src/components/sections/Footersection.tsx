@@ -14,6 +14,14 @@ const Footer = () => {
                     <p className="text-gray-300 mb-6 text-sm sm:text-base">
                         Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium pellentesque. Ornare in arcu elit quisque.
                     </p>
+                    <div className="flex gap-4">
+                        <button className="flex items-center border border-white px-4 py-2 rounded-md">
+                            Google Play
+                        </button>
+                        <button className="flex items-center border border-white px-4 py-2 rounded-md">
+                            Apple Store
+                        </button>
+                    </div>
                 </div>
             </div>
 

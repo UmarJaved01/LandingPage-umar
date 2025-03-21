@@ -10,6 +10,7 @@ import Footer from '../components/sections/Footersection';
 
 export default function Home() {
   return (
+    <>
     <div className='px-10'>
       <Navbar />
       <HeroSection />
@@ -19,7 +20,8 @@ export default function Home() {
       <Experttrainersection />
       <Trainingdevice />
       <SubscribePage />
-      <Footer />
     </div>
+      <Footer />
+    </>
   );
 }
