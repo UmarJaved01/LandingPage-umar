@@ -39,7 +39,7 @@ const Navbar = () => {
             <Link href="/privacy" className="hover:text-black" onClick={() => setIsOpen(false)}>Privacy</Link>
             
             {/* App Store Links for Mobile */}
-            <div className="flex space-x-3 mt-4">
+            <div className="flex flex-col gap-2 space-x-3 mt-4">
               <Link href="https://www.apple.com/app-store/">
                 <Image src="/images/app-store.png" alt="App Store" width={130} height={40} />
               </Link>

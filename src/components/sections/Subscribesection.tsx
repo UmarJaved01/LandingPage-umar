@@ -7,8 +7,9 @@ const SubscribePage = () => {
           Subscribe to get more fitness information
         </h2>
         <p className="text-gray-700 mb-4 text-sm sm:text-base">
-          We'll send you curated fitness information every week!
+          {"We'll send you curated fitness information every week!"}
         </p>
+
 
         {/* Email Input */}
         <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="email">

@@ -29,7 +29,7 @@ const Trainingdevice = () => {
       </p>
       <p className="text-gray-700 max-w-xl mb-6">Export your data any time.</p>
       
-      <div className="flex gap-4">
+      <div className="flex md:flex-row flex-col  md:gap-4 justify-center items-center">
         <Image src="/images/applestore1.png" alt="Download on App Store" width={150} height={50} className='py-3' />
         <Image src="/images/Playstore1.png" alt="Get it on Google Play" width={170} height={50} />
       </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ChallengeSection = () => {
   return (
-    <section className="pt-60">
+    <section className="md:pt-60 mt-5">
       <div className="max-w-5xl mx-auto text-center space-y-3">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
           Meet training. Take challenges.
